@@ -1,14 +1,8 @@
 import express from 'express'
 
 const url ='https://whois.fdnd.nl/api/v1/squad/' 
-// const data = await fetch(url).then((response) => response.json()) 
 const provincies = ['Limburg', 'Noord-Brabant', 'Zuid-Holland' , 'Zeeland', 'Noord-Holland', 'Utrecht', 'Gelderland', 'Flevoland', 'Overijssel', 'Drenthe', 'Friesland ', 'Groningen']
 const maxFromProvincies = provincies.length - 1
-// console.log(provincies)
-const string = JSON.stringify(provincies)
-// console.log(string)
-// document.querySelector(".test").innerHTML = string;
-// Maak een nieuwe express app
 const app = express()
 
 // Stel in hoe we express gebruiken
@@ -22,7 +16,6 @@ app.use(express.static('public'))
 
 // Maak een route voor de index
 app.get('/', (request, response) => {
-  // console.log(request.query.squad)
 
   let slug = request.query.squad || 'squad-b-2022'
   let orderBy = request.query.orderBy || 'name'
@@ -30,7 +23,6 @@ app.get('/', (request, response) => {
 
 
   fetchJson(squadUrl).then((data) => {
-    console.log('Hoooooi');
     data.squad.members = data.squad.members.map(function(member) {
       if (!member.residence) {
         member.residence = provincies[getRandomInt(maxFromProvincies)]
@@ -38,7 +30,6 @@ app.get('/', (request, response) => {
       return member
     })
     data.provinces = provincies
-    // console.log(data.squad.members[6]);
     response.render('index', data) 
   const filtered = structuredClone(data)
   if (request.query.provincies) {

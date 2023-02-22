@@ -2,6 +2,9 @@
   font-family: Hartsinger ;
   src: url(/font/Hartsinger.ttf);
 }
+html{
+  scroll-behavior: smooth;
+}
 body{
   box-sizing: border-box;
   font: 100%/1.4 Arial, Helvetica, sans-serif;
@@ -9,7 +12,7 @@ body{
   background-color: black;
 }
 main{
-  padding: 2rem 4.4rem;
+  padding: 2rem 5rem;
 }
 h1{
   font-family: Hartsinger ;
@@ -30,21 +33,123 @@ h1 > .titel{
   width: 90% ;
   margin: 1.5rem auto;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.5rem;
 }
-section{
+.nl-map{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  
+}
+.test{
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 1rem 0 ;
+  width: 300px; 
+  height: 400px;
+  overflow-y: scroll;
+  border-radius: 20px; 
+}
+.test a{
+  font-family: Hartsinger ;
+  padding: 2rem ;
+  text-decoration: none;
+  font-size: 2rem;
+  color: #3DD9F5;
+  transition: .5s;
+}
+
+.test a:hover{
+  background-color: #3DD9F5;
+  color: black;
+  
+}
+.members{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin: auto;
   gap: 2rem;
 }
+/* .scroll-douwn{
 
+} */
+.scroll-douwn svg{
+  display: block;
+  fill: #3DD9F5;
+  margin: auto;
+  width: 30px;
+  animation: down 1s infinite;
+	-webkit-animation: down 1s infinite;
+  transition: .5s;
+  filter: drop-shadow(0 -6mm 1mm rgb(255, 255, 255));  
+}
+
+@keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+@-webkit-keyframes down {
+	0% {
+		transform: translate(0);
+	}
+	20% {
+		transform: translateY(15px);
+	}
+	40% {
+		transform: translate(0);
+	}
+}
+
+.filter-info{
+  display: flex;
+  flex-direction: row;
+  color: white;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 0 1rem 0;
+  margin: auto;
+  width: 80%;
+}
+.filter-titel{
+  font-family: Hartsinger ;
+  font-size: 4rem;
+  color: #3DD9F5;
+}
+.filter-quantity svg{
+width: 1.5rem;
+fill: white;
+}
+.filter-quantity em{
+  padding: 0 0 0 1rem;
+  font-size: 2rem;
+  color: #3DD9F5
+}
 .card svg{
 position: relative;
 fill: white;
 width: 15rem;
+}
+
+.like-svg svg {
+  width: 3rem;
+  position: absolute;
+  fill: #3DD9F5;
+  bottom: 20%;
+  right: 40%;
+
+
 }
 article img{
 position: absolute;
@@ -104,5 +209,15 @@ footer{
   align-items: center;
   color: white;
   margin-top: 1rem;
+  border-radius: 20px;
+}
+
+@media screen and (max-width: 50rem)  {
+  main{
+    padding: 1rem 2rem;
+  }
+  .test{
+ display: none;
+  }
 }
 
