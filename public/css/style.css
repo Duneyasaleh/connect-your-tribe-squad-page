@@ -9,18 +9,18 @@ body{
   background-color: black;
 }
 main{
-  padding: 2rem 0.4rem;
+  padding: 2rem 4.4rem;
 }
 h1{
   font-family: Hartsinger ;
   letter-spacing: 3px;
   text-transform:capitalize;
   color: white;
-  width: 150px;
-  line-height: 2rem;
+  width: 250px;
+  line-height: 4rem;
   margin: auto;
   text-align: center;
-  font-size: 3rem;
+  font-size: 6rem;
 }
 h1 > .titel{
   color: #3DD9F5;
@@ -30,6 +30,8 @@ h1 > .titel{
   width: 90% ;
   margin: 1.5rem auto;
   text-align: center;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
 }
 section{
   display: flex;
@@ -38,10 +40,7 @@ section{
   margin: auto;
   gap: 2rem;
 }
-/* article{
-  flex: 0 0 10%;
-  text-align: center;
-} */
+
 .card svg{
 position: relative;
 fill: white;
