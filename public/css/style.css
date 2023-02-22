@@ -1,0 +1,109 @@
+@font-face{
+  font-family: Hartsinger ;
+  src: url(/font/Hartsinger.ttf);
+}
+body{
+  box-sizing: border-box;
+  font: 100%/1.4 Arial, Helvetica, sans-serif;
+  line-height: 110%;
+  background-color: black;
+}
+main{
+  padding: 2rem 0.4rem;
+}
+h1{
+  font-family: Hartsinger ;
+  letter-spacing: 3px;
+  text-transform:capitalize;
+  color: white;
+  width: 150px;
+  line-height: 2rem;
+  margin: auto;
+  text-align: center;
+  font-size: 3rem;
+}
+h1 > .titel{
+  color: #3DD9F5;
+}
+.subtitel{
+  color: #3DD9F5;
+  width: 90% ;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+  gap: 2rem;
+}
+/* article{
+  flex: 0 0 10%;
+  text-align: center;
+} */
+.card svg{
+position: relative;
+fill: white;
+width: 15rem;
+}
+article img{
+position: absolute;
+ width: 150px;
+ height: 150px;
+ object-fit: cover;
+ border-radius: 150px;
+ left: 2.69rem;
+top: 2.2rem;
+}/* card */
+.card1{
+  width: 240px;
+  height: 350px;
+  perspective: 1000px;
+  text-align: center;
+  filter: drop-shadow(0 4px 8px 0 rgba(0,0,0,0.2));
+}
+.card{
+  position: relative;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+.front-card, .back-card{
+  position: absolute;
+  backface-visibility: hidden;
+}
+.back-card{
+  transform: rotateY(180deg);
+}
+.card:hover, .card1{
+  transform: rotateY(180deg);
+}
+.back-card_info{
+  position: absolute;
+  text-align: center;
+  transform: rotateY(180deg);
+  color: black;
+
+  top: 25%;
+  left: 27%;
+}
+.back-card img {
+  filter: blur(5px);
+}
+.back-card_info svg{
+fill: #3DD9F5;
+width: 4rem;
+}
+
+footer{
+  border-top: .1px solid #3DD9F5;
+  width: 100%;
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 1rem;
+}
+
