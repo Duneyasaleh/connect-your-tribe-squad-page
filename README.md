@@ -1,6 +1,6 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
-# Squadpage
+# Squadpage squad B
  Een squadpagina op basis van een bestaande API gesorteerd op woonplaats.
 
 ![tablet_laptop_and_smartphone_duneya-samenreizen](https://user-images.githubusercontent.com/112861375/220599630-4ee9fb12-bd69-46a2-b7d6-c34bfcc12617.png)
@@ -20,6 +20,7 @@
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
+
 
 ## Installatie
 <!-- Bij Installatie staat stap-voor-stap beschreven hoe je de development omgeving moet inrichten om aan de repository te kunnen werken. -->
