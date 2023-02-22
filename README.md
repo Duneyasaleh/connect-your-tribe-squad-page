@@ -1,7 +1,7 @@
 > _Fork_ deze leertaak en ga aan de slag. Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
 
 # Squadpage
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+ Een squadpagina op basis van een bestaande API gesorteerd op woonplaats.
 
 ![tablet_laptop_and_smartphone_duneya-samenreizen](https://user-images.githubusercontent.com/112861375/220599630-4ee9fb12-bd69-46a2-b7d6-c34bfcc12617.png)
 
@@ -16,7 +16,6 @@
 
 ## Beschrijving
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
 ## Kenmerken
