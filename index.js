@@ -30,14 +30,19 @@ app.get('/', (request, response) => {
       return member
     })
     data.provinces = provincies
-    response.render('index', data) 
+    // response.render('index', data)
+
   const filtered = structuredClone(data)
+  filtered.currentProv = null
   if (request.query.provincies) {
-    filtered.squad.members = filtered.squad.members.filter((member) => member.provincies == request.query.provincies)
+    
+    filtered.currentProv = request.query.provincies
+    filtered.squad.members = filtered.squad.members.filter((member) => member.residence == request.query.provincies)
+   
   }
   response.render('index', filtered)
   })
-  
+  // console.log(data.squad.members);
 
  })
 
@@ -66,3 +71,4 @@ async function fetchJson(url) {
     .then((response) => response.json())
     .catch((error) => error)
 }
+
