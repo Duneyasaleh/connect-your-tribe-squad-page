@@ -19,6 +19,9 @@
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
 ## Kenmerken 👓
+- node: Is een open-source, platformonafhankelijke JavaScript-runtime en -bibliotheek voor het uitvoeren van webapplicaties buiten de clientbrowser.
+- ejs: is een eenvoudige sjabloontaal waarmee u HTML-opmaak kunt maken met behulp van eenvoudig JavaScript. Geen religiositeit in het organiseren van dingen. Geen   herhaling en heruitvinding van control flow. Het is gewoon JavaScript
+- Express: Is een backend-framework voor het bouwen van RESTful API's met behulp van Node.js
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 
 ### tools
@@ -28,8 +31,9 @@
 ### gerbuikte technieken
 
 - node
+- Ejs
+- Express
 - javascript
-- ejs
 - css
 
 
