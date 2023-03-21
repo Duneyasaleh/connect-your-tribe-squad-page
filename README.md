@@ -14,6 +14,7 @@
   * [Licentie](#licentie)
 
 ## Beschrijving ✍
+Voor deze opdracht werken wij in node.js, de opdracht was maak een squad page van de eerste periode maar in de node.
 <!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
