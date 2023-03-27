@@ -189,7 +189,7 @@ top: 2.2rem;
 .back-card{
   transform: rotateY(180deg);
 }
-.card:hover, .card1{
+.card:has(path:hover)  {
   transform: rotateY(180deg);
 }
 .back-card_info{
